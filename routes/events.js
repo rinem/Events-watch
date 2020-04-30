@@ -105,11 +105,6 @@ router.delete('/:id', auth, async (req, res) => {
 
     if (!event) return res.status(404).json({msg: 'Event not found'});
 
-    // Make sure user owns event
-    if (event.user.toString() !== req.user.id) {
-      return res.status(401).json({msg: 'Not authorized'});
-    }
-
     await Event.findByIdAndRemove(req.params.id);
 
     res.json({msg: 'Event removed'});
