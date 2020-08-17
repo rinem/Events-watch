@@ -2,6 +2,16 @@
 
 MERN stack event manager app , created with React, Node & JWT authentication. Users can create account to add, view, update and delete events created by everyone using the app. 
 
+## Heroku 
+The app is deployed on heroku and can be checked here : https://events-watch.herokuapp.com
+
+## Demo
+
+UI screenshots : 
+![2](/demo/demo3.jpg)
+![3](/demo/demo2.jpg)
+![4](/demo/demo1.jpg)
+
 ## Usage
 
 Install dependencies
