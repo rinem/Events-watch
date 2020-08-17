@@ -4,10 +4,10 @@
 
 /* Global Styles */
 :root {
-	--primary-color: #378473;
-	--dark-color: #333333;
-	--light-color: #f4f4f4;
-	--danger-color: #dc3545;
+	--primary-color: #eba166;
+	--dark-color: #5a5555;
+	--light-color: #fff4e3;
+	--danger-color: #ef4455;
 	--success-color: #28a745;
 }
 
@@ -21,7 +21,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 0.9rem;
 	line-height: 1.6;
-	background-color: #fff;
+	background-color: #fad9c3;
 	color: #333;
 }
 
@@ -73,13 +73,13 @@ img {
 }
 
 .text-auth {
-	color: var(--primary-color);
+	color: #e07927;
 	font-size: 2.2rem;
 	font-weight: 700;
 }
 
 .text-primary {
-	color: var(--primary-color);
+	color: #e07927;
 	font-size: 1.5rem;
 	font-weight: 700;
 }
@@ -100,10 +100,22 @@ img {
 	text-align: left;
 }
 
+.add-text {
+	color: #e07927;
+	font-size: 2.2rem;
+	font-weight: 600;
+}
+
+.welcome-text {
+	color: #2a2b2e;
+	font-weight: 600;
+	padding-right: 10px;
+}
+
 /* Cards */
 .card {
 	padding: 1rem;
-	border: #ccc 1px dotted;
+	border: #2a2b2e 1px solid;
 	margin: 0.7rem 0;
 }
 
@@ -186,7 +198,7 @@ img {
 .grid-2 {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	grid-gap: 2rem;
+	grid-gap: 5rem;
 }
 
 .grid-3 {
@@ -215,6 +227,8 @@ img {
 	font-size: 1rem;
 	border: none;
 	cursor: pointer;
+	border-radius: 5px;
+	border: 1px solid #2a2b2e;
 	margin-right: 0.5rem;
 	transition: opacity 0.2s ease-in;
 	outline: none;
@@ -234,8 +248,8 @@ img {
 
 .btn-sm {
 	font-size: 0.8rem;
-	padding: 0.3rem 1rem;
-	margin-right: 0.2rem;
+	padding: 0.5rem 1rem;
+	margin-right: 0.8rem;
 }
 
 .badge {
@@ -261,7 +275,7 @@ img {
 .badge-primary,
 .alert-primary {
 	background: var(--primary-color);
-	color: #fff;
+	color: #111;
 }
 
 .btn-light,
@@ -277,7 +291,7 @@ img {
 .badge-dark,
 .alert-dark {
 	background: var(--dark-color);
-	color: #fff;
+	color: #ddd;
 }
 
 .btn-danger,
@@ -285,7 +299,7 @@ img {
 .badge-danger,
 .alert-danger {
 	background: var(--danger-color);
-	color: #fff;
+	color: #ddd;
 }
 
 .btn-success,
@@ -293,7 +307,7 @@ img {
 .badge-success,
 .alert-success {
 	background: var(--success-color);
-	color: #fff;
+	color: #ddd;
 }
 
 .btn-white,
@@ -311,7 +325,7 @@ img {
 
 .bg-light,
 .badge-light {
-	border: #ccc solid 1px;
+	border-radius: 10px;
 }
 
 .round-img {
@@ -346,10 +360,28 @@ textarea {
 	padding-bottom: 0.6rem;
 	margin-top: 20px;
 	font: inherit;
+	background-color: var(--light-color);
 	margin-bottom: 20px;
 	font-size: 1.1rem !important;
-	border: solid 1px #8f939c;
+	border: solid 1px #2a2b2e;
 	outline: none;
+	border-radius: 5px;
+}
+
+::placeholder {
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: #071e3d;
+	opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	color: #071e3d;
+}
+
+::-ms-input-placeholder {
+	/* Microsoft Edge */
+	color: #071e3d;
 }
 
 textarea {
@@ -415,7 +447,7 @@ table th {
 	padding: 0.7rem 2rem;
 	z-index: 1;
 	width: 100%;
-	border-bottom: solid 1px var(--primary-color);
+	border-bottom: solid 1px #2a2b2e;
 	opacity: 0.9;
 	margin-bottom: 1rem;
 }
@@ -425,7 +457,8 @@ table th {
 }
 
 .navbar a {
-	color: #fff;
+	color: #2a2b2e;
+	font-weight: bold;
 	padding: 0.45rem;
 	margin: 0 0.25rem;
 }
@@ -438,7 +471,7 @@ table th {
 }
 
 .navbar a:hover {
-	color: var(--light-color);
+	color: #444;
 }
 
 .navbar .welcome span {

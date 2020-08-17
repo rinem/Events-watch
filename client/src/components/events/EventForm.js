@@ -48,7 +48,9 @@ const EventForm = () => {
 
 	return (
 		<form onSubmit={onSubmit}>
-			<h2 className='text-danger'>{current ? 'Edit Event' : 'Add Event'}</h2>
+			<h2 className='text-primary add-text'>
+				{current ? 'Edit Event' : 'Add Event'}
+			</h2>
 			<input
 				type='text'
 				placeholder='Event Name'
