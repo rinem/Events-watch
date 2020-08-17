@@ -497,6 +497,13 @@ table th {
 	transition: opacity 1000ms ease-in;
 }
 
+.loader {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 100px;
+}
+
 /* Mobile Styles */
 @media (max-width: 700px) {
 	.hide-sm {
