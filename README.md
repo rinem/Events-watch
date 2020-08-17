@@ -1,6 +1,6 @@
-# Events-Watch
+# EventsWatch
 
-MERN stack event manager app , created with React, Node & JWT authentication.
+MERN stack event manager app , created with React, Node & JWT authentication. Users can create account to add, view, update and delete events created by everyone using the app. 
 
 ## Usage
 
